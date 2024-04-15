@@ -8,9 +8,9 @@
 #### Kurulum
 1. Dosyaları indirin
 2. index.js'i terminalde açın
-3. "npm install" diyerek tüm gereksinim dosyalarını indirin
+3. "npm install" ile diğer tüm gereksinim dosyalarını indirin
 4. index.js içerisindeki "domains" dizisine aratmak istediğiniz domainleri yazın
-5. npm start ile başlatabilirsiniz
+5. npm start ile başlatın
 
 #### Sonraki sürümde yapılacaklar
 1. Cron işlemlerinin bağlanması
