@@ -85,7 +85,7 @@ puppeteer.use(StealthPlugin());
     console.log(result);
 
 
-    // Start Info
+    // Over Info
     result.length > 0 ? console.log("İsimtescil, domains search is over") : "";
 
 
