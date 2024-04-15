@@ -12,8 +12,11 @@
 4. index.js içerisindeki "domains" dizisine aratmak istediğiniz domainleri yazın
 5. npm start ile başlatın
 
+#### Özellikler
+1. Uzantıya göre listeleme <code>const extensions = ["com", "net", "xyz"]; </code>
+
 #### Sonraki sürümde yapılacaklar
 1. Cron işlemlerinin bağlanması
 2. Otomatik satın alma işlemleri
 3. API desteği
-4.<del> Belirtilen domain uzantısına göre listeleme </del>
+4. Belirtilen domain uzantısına göre listeleme <Tamamlandı>
