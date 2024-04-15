@@ -20,9 +20,7 @@ puppeteer.use(StealthPlugin());
 
     // Domains
     const domains = [
-        "serkankuyu",
-        "kelimeorgusu",
-        "facebook"
+        "doso"
     ];
 
     // Domain Result
@@ -36,7 +34,6 @@ puppeteer.use(StealthPlugin());
     let completedDomains = 0;
 
     for (const domain of domains) {
-
         // Search
         await page.type("body > section.bg-g-purple.w-full > div.container.mb-4 > div > div:nth-child(2) > form > div > input.box.form-control.rounded-3.fs-5", domain);
 
@@ -53,6 +50,10 @@ puppeteer.use(StealthPlugin());
             const rows = document.querySelectorAll(`${tableSelector} tr`);
 
             rows.forEach(row => {
+
+                // Extensions
+                const extensions = ["com", "net", "xyz"];
+
                 const columns = row.querySelectorAll("td");
                 if (columns.length !== 6) return;
 
@@ -63,7 +64,14 @@ puppeteer.use(StealthPlugin());
                 const priceDiscount = priceDiscountElement ? priceDiscountElement.textContent.trim() : "";
                 const priceOriginal = priceOrijinalElement ? priceOrijinalElement.textContent.trim() : "";
                 const status = columns[2].querySelector("p")?.textContent.trim() || "";
-                result.push({ domain, discount, priceDiscount, priceOriginal, status });
+
+                // Data
+                const data = { domain, discount, priceDiscount, priceOriginal, status };
+
+                // Split domain
+                const domainExtension = domain.split(".");
+                domainExtension.length >= 2 && extensions.includes(domainExtension[1]) ? result.push(data) : (extensions.length == 0 ? result.push(data) : [])
+
             });
 
             return result;
@@ -85,10 +93,9 @@ puppeteer.use(StealthPlugin());
     console.log(result);
 
 
-    // Over Info
+    // Start Info
     result.length > 0 ? console.log("İsimtescil, domains search is over") : "";
 
-    // Close page
-    await browser.close();
+
 
 })(); 
