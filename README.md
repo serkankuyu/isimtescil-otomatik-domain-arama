@@ -1,5 +1,5 @@
-### İsimtescil.com Otomatik Domain Durumu Arama
-İsimtecil.com adresinden otomatik domain satış durumlarının sorgulanması
+### İsimtescil.net Otomatik Domain Durumu Arama
+İsimtecil.net adresinden otomatik domain satış durumlarının sorgulanması
 
 #### Gereksinimler
 1. Node.js
