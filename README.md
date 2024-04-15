@@ -16,4 +16,4 @@
 1. Cron işlemlerinin bağlanması
 2. Otomatik satın alma işlemleri
 3. API desteği
-4. Belirtilen domain uzantısına göre listeleme
+4.<del> Belirtilen domain uzantısına göre listeleme </del>
