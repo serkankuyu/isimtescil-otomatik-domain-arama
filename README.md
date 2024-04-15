@@ -1,5 +1,5 @@
 ### İsimtescil.net Otomatik Domain Durumu Arama
-İsimtecil.net adresinden otomatik domain satış durumlarının sorgulanması
+İsimtecil.net adresinden otomatik domain satış durumlarının sorgulanması! Satışa müsait olan alan adlarına hızlı ulaşmanız için tasarlanmıştır.
 
 #### Gereksinimler
 1. Node.js
